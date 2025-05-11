@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pix Premiado - 9º Ano A</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #000000;
+    }
+    header {
+      background: #310053;
+      color: rgb(255, 255, 255);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    .banner {
+      background: #efd8ff;
+      padding: 2rem;
+      text-align: center;
+    }
+    .breakbanner {
+      padding: 2rem;
+      text-align: center;
+    }
+    .banner h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .banner img {
+      max-width: 200px;
+      margin-top: 1rem;
+    }
+    .chave-container {
+      margin-top: 1rem;
+    }
+    .chave {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .copy-btn {
+      background-color: #4B0082;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-left: 0.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .copy-btn:hover {
+      background-color: #4B0082;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .section h3 {
+      color: #4B0082;
+      text-align: center;
+    }
+    .steps {
+      display: grid;
+      gap: 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"], input[type="tel"], input[type="email"], input[type="submit"] {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: #4B0082;
+      color: white;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #4B0082;
+    }
+    #countdown {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4B0082;
+      margin-top: 1rem;
+    }
+    footer {
+      background: #310053;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    a {
+        color: white;
+    }
+    .list1 {
+        text-align: center;
+    }
+    .questio {
+        align-items: center;
+        height: 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h3>E.E. PEI Epitácio Pessoa</h3>
+    <h3>Pix Premiado - 9º Ano A</h3>
+  </header>
+
+  <div class="banner">
+    <h2>🎁 Concorra a diversos prêmios com apenas R$ 5,00 no PIX!</h2>
+    <p>Ajude nossa classe e ainda participe do sorteio no dia 30/06/2025.</p>
+  </div>
+
+  <div class="breakbanner">
+    <section class="section">
+    <h3>🏆 Premiações! 🏅</h3>
+    <p class="list1"><strong>➡️ Hidratação - Bia Tristão Hair</strong></p>
+    <p class="list1"><strong>➡️ Manicure e Pedicure - Jô Manicure</strong></p>
+    <p class="list1"><strong>➡️ Kit Eudora - Profª Rafaela</strong></p>
+    <p class="list1"><strong>➡️ Cosméticos - Elegance </strong></p>
+  </section>
+
+    <section class="section">
+    <h3>🎉 Boa Sorte! 🍀</h3>
+    <p>O sorteio será realizado no dia <strong>30/06/2025</strong> 🗓️, sendo uma ação entre estudantes 🎰. O vencedor será anunciado em nossas redes sociais 📲, e o prêmio será enviado diretamente ao ganhador 🚚. Prepare-se, pois a sorte pode estar ao seu lado! 😃</p>
+    <p>Fique de olho no cronômetro ⏳ e participe dessa ação maravilhosa para ajudar nossa classe! 💜🤍</p><br>
+     <p id="countdown"></p>
+  </section>
+  </div>
+
+   <div class="banner">
+    <img src="qr - code.png" alt="QR Code do PIX" />
+    <div class="chave-container">
+      <p class="chave">Chave Pix: <span id="chavePix">7fef6711-e865-459f-8f06-270b87a0912b</span>
+        <button class="copy-btn" onclick="copiarChave()">Copiar</button>
+      </p>
+    </div>
+
+
+   
+  </div>
+
+  <section class="section">
+    <h3> ✔️ Como Funciona ✔️ </h3>
+    <div class="steps">
+      <p>1️⃣ <strong>Cadastre-se abaixo</strong> com seus dados para participar e garantir sua chance de ganhar! 📝</p>
+      <p>2️⃣ Envie um <strong>PIX de R$ 5,00</strong> para a chave: <strong>7fef6711-e865-459f-8f06-270b87a0912b</strong> 💸</p>
+      <p>3️⃣ Preencha corretamente <strong>todos os dados</strong>, para facilitar nossa comunicação 📞</p>
+      <p>4️⃣ <strong>Aguarde o sorteio</strong> e boa sorte! 🍀✨ O vencedor será divulgado em nossas redes sociais 📲</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Cadastro para Participação</h3>
+    <iframe class="questio" width="800px" height="800px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=3C52UFD5SE-0Oew0IoJgDBsOxDKuqjpBqSlEumSpOLNURTQzOUczVzhLU0VSNU40WlcwWE1TRTJETi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+  </section>
+
+  <section class="section">
+    <h3>📜 Regulamento</h3>
+    <ul>
+            <li>🎁 Esta é uma <strong>ação entre estudantes</strong>, com fins 100% beneficentes</li>
+    <li>💵 Cada participação equivale a um comprovante de R$ 5,00</li>
+    <li>🧾 O número da sorte será vinculado ao nome e telefone informado no cadastro</li>
+    <li>📅 O sorteio será feito de forma transparente no dia 30/06/2025, por meio de sorteador online</li>
+    <li>🏫 Todo valor arrecadado será usado para a realização da confraternização da classe</li>
+    <li>📲 O resultado será divulgado em nossas redes sociais</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 E.E. PEI EPITÁCIO PESSOA - 9º ANO A | Contato: (15) 99754-0738 | Instagram:<a color="white" target="_blank" href="https://www.instagram.com/9a_epitaciopessoa/profilecard/?igsh=dzhwNnY4cHoyeXNo">@9a_epitáciopessoa</a>
+  </footer>
+
+
+  <script>
+    // Copiar chave Pix
+    function copiarChave() {
+      const chave = document.getElementById("chavePix").innerText;
+      navigator.clipboard.writeText(chave).then(() => {
+        alert("Chave Pix copiada com sucesso!");
+      });
+    }
+
+    // Contagem regressiva
+    const countdown = document.getElementById("countdown");
+    const targetDate = new Date("2025-06-30T00:00:00").getTime();
+
+    const timer = setInterval(function () {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        clearInterval(timer);
+        countdown.innerHTML = "⏳ Sorteio realizado!";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerHTML = `⏳ Faltam ${days}d ${hours}h ${minutes}min ${seconds}s`;
+    }, 1000);
+  </script>
+</body>
+</html>
